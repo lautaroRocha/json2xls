@@ -1,0 +1,49 @@
+{
+    "title": "client1",
+    "data": [
+      {
+        "fecha": "24-08-2023 16:09:09",
+      "comprobante": "FC A 0002-00001253",
+      "importe": "126.00",
+      "sucursal": 1,
+      "idTransac": 3637
+      },
+      {
+      "fecha": "24-08-2023 16:09:09",
+      "comprobante": "FC A 0002-00001253",
+      "importe": "126.00",
+      "sucursal": 1,
+      "idTransac": 3637
+      },  {
+        "fecha": "24-08-2023 16:09:09",
+      "comprobante": "FC A 0002-00001253",
+      "importe": "126.00",
+      "sucursal": 1,
+      "idTransac": 3637
+      },  {
+        "fecha": "24-08-2023 16:09:09",
+      "comprobante": "FC A 0002-00001253",
+      "importe": "126.00",
+      "sucursal": 1,
+      "idTransac": 3637
+      },  {
+        "fecha": "24-08-2023 16:09:09",
+      "comprobante": "FC A 0002-00001253",
+      "importe": "126.00",
+      "sucursal": 1,
+      "idTransac": 3637
+      },  {
+    "fecha": "24-08-2023 16:09:09",
+      "comprobante": "FC A 0002-00001253",
+      "importe": "126.00",
+      "sucursal": 1,
+      "idTransac": 3637
+      },  {
+    "fecha": "24-08-2023 16:09:09",
+      "comprobante": "FC A 0002-00001253",
+      "importe": "126.00",
+      "sucursal": 1,
+      "idTransac": 3637
+      }
+    ] 
+  }

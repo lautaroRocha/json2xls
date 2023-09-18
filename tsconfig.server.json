@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/server",
+      "noImplicitAny": true,
+      "module": "es2022",
+      "moduleResolution": "Node",
+      "target": "es5",
+      "noUnusedParameters": false,
+      "allowSyntheticDefaultImports": true,
+      "lib": ["es2017", "dom"],
+      "types": ["node", "express"]
+    },
+    "include": ["src/server"],
+    "exclude": ["node_modules", "src/client/**/*"]
+  }
+  

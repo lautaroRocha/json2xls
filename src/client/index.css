@@ -1,0 +1,75 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darker-txt: #363852;
+  --dark-txt: #3B456D;
+  --deep-txt: #264A75;
+  --main: #1AE1B8;
+  --text: #6C73A8;
+  --border: #ADB1D0;
+  --bg: #F3F4F8;
+  --white: #FFFFFF;
+  --toastify-color-error: #FF5876;
+
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(95, 53, 53, 0.87);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem auto;
+  width: 50%;
+  gap: 1rem;
+  color: var(--dark-txt);
+}
+
+.buttons>div{
+  display: flex;
+  gap: 1rem;
+}
+.buttons p {
+  margin-top: 3rem;
+}
+.buttons code{
+  padding: 1rem;
+  margin-top: 3rem;
+  color: var(--bg);
+  font-family: monospace;;
+  background-color :#6C73A8;
+}
