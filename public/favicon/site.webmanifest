@@ -1,6 +1,6 @@
 {
-  "name": "Poc-Excel",
-  "short_name": "poc-excel",
+  "name": "JSON2XLS",
+  "short_name": "JSON2XLS",
   "icons": [
     {
       "src": "/favicon/android-chrome-192x192.png",

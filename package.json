@@ -1,5 +1,5 @@
 {
-  "name": "@frontend/poc-excel",
+  "name": "json-2-xls",
   "private": true,
   "version": "0.0.0",
   "type": "module",

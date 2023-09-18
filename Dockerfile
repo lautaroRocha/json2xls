@@ -2,8 +2,8 @@ FROM node:16.19-alpine
 
 ARG VERSION=0.0.0
 
-LABEL maintainer="Team Architecture <architecture@infosis.tech>" \
-      org.label-schema.vcs-url="https://gitlab.infosisglobal.com/frontend/poc-excel" \
+LABEL maintainer="lautaroRocha" \
+      org.label-schema.vcs-url="https://github.com/lautaroRocha/json2xls" \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
