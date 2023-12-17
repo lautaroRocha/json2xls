@@ -56,7 +56,10 @@ function emptyDirectories(dirs: Array<string>) {
 const createExcelFile = async (req: Request, res: Response, _next: NextFunction) => {
   const body = req.body
   const { title, data } = JSON.parse(body)
-  const csvString = await json2csv(data)
+  const csvString = await json2csv(data, {emptyFieldValue: ' ', preventCsvInjection: true})
+  csvString.replaceAll('null', '')
+  csvString.replaceAll('undefined', '')
+  logger.info('csv string is: ' + csvString)
   const csvPath = path.join(path.join(__dirname, "/csv"), `${title}.csv`)
   const destination = path.join(__dirname, `/xls/${title}.xls`)
 

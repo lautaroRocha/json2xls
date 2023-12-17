@@ -6,20 +6,11 @@ import cors from "cors"
 import { fileURLToPath } from "url"
 import { config } from "./config/index"
 import logger from "./loaders/logger"
-import * as sentry from "./loaders/sentry"
 import apiRouter from "./routes/api/index"
-import sentryRouter from "./routes/sentry/index"
 import { errorLogger } from "./middlewares/errorLogger"
 
 const app = express()
 
-sentry.load({ expressApp: app })
-
-app.use(
-  Sentry.Handlers.requestHandler({
-    transaction: "handler"
-  })
-)
 
 app.use(bodyParser.json({ limit: "50mb" }))
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true, parameterLimit: 50000 }))
@@ -33,7 +24,6 @@ export const __dirname = path.dirname(__filename)
 
 app.use(express.static(path.join(__dirname, "../../dist")))
 
-app.use("/sentry", sentryRouter)
 app.use("/api", apiRouter)
 app.get("*", (_req, res) => {
   res.sendFile(path.join(__dirname, "../../dist/index.html"))

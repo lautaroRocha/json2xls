@@ -73,3 +73,13 @@ h1 {
   font-family: monospace;;
   background-color :#6C73A8;
 }
+
+textarea{
+  resize: none;
+  width: 50vw;
+  height: 400px;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #1AE1B8;
+  background-color: #20253a;
+}
